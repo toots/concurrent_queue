@@ -1,0 +1,14 @@
+opam-version: "2.0"
+name: "concurrent_queue"
+version: "0.1.0"
+maintainer: "Romain Beauxis <toots@rastageeks.org>"
+authors: "The Savonet Team <toots-users@lists.sourceforge.net>"
+homepage: "https://github.com/toots/concurrent_queue"
+bug-reports: "https://github.com/toots/concurrent_queue/issues"
+depends: [
+  "ocaml"
+  "ocamlfind" {build}
+]
+build: ["dune" "build" "-p" name "-j" jobs]
+synopsis: "Concurrent access to Queues"
+dev-repo: "git+https://github.com/toots/concurrent_queue.git"

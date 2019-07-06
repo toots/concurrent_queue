@@ -1,0 +1,4 @@
+(library
+ (name        concurrent_queue)
+ (public_name concurrent_queue)
+ (libraries threads))
